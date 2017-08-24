@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contest</title>
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link rel="stylesheet" type="text/css" href="fonts/new-petsites/styles.css">
+</head>
+<body>
+    <div class="page">
+        <div class="container">
+            <div class="contest">
+                <div class="box__title clearfix" style="padding-left:20px;">
+                    <h1 class="np-ico-contest">Our List Contest</h1>
+                </div>
+                <div class="container_grid" id="wrap">
+                    <div class="row">
+                        <div class="listcontest">
+                            <div class="ribbon ribbon-top-left">
+                                <span style="background-color:#089620;">Finished</span>
+                            </div>
+                            <h3><a href="#">Cat Photo Contest</a></h3>
+                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                            <div class="contest_stats">
+                                <div class="contest_designs">
+                                    <span>Entries</span> <br>1
+                                </div>
+                                <div class="contest_price">
+                                    <span>Vote</span> <br>1
+                                </div>
+                            </div>
+                        </div>
+                        <div class="listcontest">
+                            <div class="ribbon ribbon-top-left">
+                                <span style="background-color:#ff0000;">Finished</span>
+                            </div>
+                            <h3><a href="#">Cat Photo Contest</a></h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum elit ultrices rutrum tincidunt. Suspendisse finibus lacus volutpat sapien tempor, nec pharetra ipsum aliquam. Fusce efficitur quam ...</p>
+                            <div class="contest_stats">
+                                <div class="contest_designs">
+                                    <span>Entries</span> <br>1
+                                </div>
+                                <div class="contest_price">
+                                    <span>Vote</span> <br>1
+                                </div>
+                            </div>
+                        </div>
+                        <div class="listcontest">
+                            <div class="ribbon ribbon-top-left">
+                                <span style="background-color:#0863c1;">Finished</span>
+                            </div>
+                            <h3><a href="#">Cat Photo Contest</a></h3>
+                            <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                            <div class="contest_stats">
+                                <div class="contest_designs">
+                                    <span>Entries</span> <br>1
+                                </div>
+                                <div class="contest_price">
+                                    <span>Vote</span> <br>1
+                                </div>
+                            </div>
+                        </div>
+                        <div class="listcontest">
+                            <div class="ribbon ribbon-top-left">
+                                <span style="background-color:#ff0000;">Finished</span>
+                            </div>
+                            <h3><a href="#">Cat Photo Contest</a></h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum elit ultrices rutrum tincidunt. Suspendisse finibus lacus volutpat sapien tempor, nec pharetra ipsum aliquam. Fusce efficitur quam ...</p>
+                            <div class="contest_stats">
+                                <div class="contest_designs">
+                                    <span>Entries</span> <br>1
+                                </div>
+                                <div class="contest_price">
+                                    <span>Vote</span> <br>1
+                                </div>
+                            </div>
+                        </div>
+                        <div class="listcontest">
+                            <div class="ribbon ribbon-top-left">
+                                <span style="background-color:#ff0000;">Finished</span>
+                            </div>
+                            <h3><a href="#">Cat Photo Contest</a></h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum elit ultrices rutrum tincidunt. Suspendisse finibus lacus volutpat sapien tempor, nec pharetra ipsum aliquam. Fusce efficitur quam ...</p>
+                            <div class="contest_stats">
+                                <div class="contest_designs">
+                                    <span>Entries</span> <br>1
+                                </div>
+                                <div class="contest_price">
+                                    <span>Vote</span> <br>1
+                                </div>
+                            </div>
+                        </div>
+                        <div class="listcontest">
+                            <div class="ribbon ribbon-top-left">
+                                <span style="background-color:#089620;">Finished</span>
+                            </div>
+                            <h3><a href="#">Cat Photo Contest</a></h3>
+                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                            <div class="contest_stats">
+                                <div class="contest_designs">
+                                    <span>Entries</span> <br>1
+                                </div>
+                                <div class="contest_price">
+                                    <span>Vote</span> <br>1
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>            
+    </div>
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script>
+        $(function () {
+            var container = $('#wrap');
+
+            // Creates an instance of Masonry on #posts
+            container.masonry({
+                gutter: 20,
+                isFitWidth: true,
+                itemSelector: '.listcontest',
+                columnWidth: '.listcontest'
+            });
+
+            $(".listcontest").off().on("click", function (e) {
+                
+            });
+        });
+    </script>
+</body>
