@@ -38,7 +38,7 @@
                 <div class="contest__content clearfix">
                     <div class="contest__joinbutton">
                         <p>
-                            Upload your cutest cat’s photo <a href="#" class="btn--1 small">Upload Photo</a> or <a href="#" class="btn--1 small">Select from Photo Gallery</a>
+                            Upload your cutest cat’s photo <a href="javascript:void(0)" onclick="login()" class="btn--1 small">Upload Photo</a> or <a href="#" class="btn--1 small">Select from Photo Gallery</a>
                         </p>
                     </div>
                     <!--.contest__joinbutton-->
@@ -200,6 +200,27 @@
             </div>
         </div>
     </div>
+	<div class="modal fade withform" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
+		<div role="document" class="modal-dialog loginmodal-container">
+            <div class="modal-content row">
+                <a data-dismiss="modal" class="mfp-close closesendarticle"></a>
+
+                <div class="popup__title"><h1>Login to Your Account</h1></div>
+                <div class="modal-body clearfix">
+					<div class="alert alert-danger">
+						Please check your username and password
+					</div>
+					<form>
+						<input type="text" name="user" placeholder="Username">
+						<input type="password" name="pass" placeholder="Password">
+						<input type="submit" name="login" class="login loginmodal-submit" value="Login">
+					</form>
+					<a href="javascript:void(0)" onclick="showalert()">Show</a>
+                </div>
+            </div>
+        </div>
+		
+	</div>
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/masonry.pkgd.min.js"></script>
@@ -212,5 +233,11 @@
         function showpopupprize() {
             $('#popupdetailprize').modal('show');
         }
+		function login(){
+			$('#login-modal').modal('show');
+		}
+		function showalert(){
+			$(".alert").toggle("slow");
+		}
     </script>
 </body>
